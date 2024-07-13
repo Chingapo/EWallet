@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarLintProjectSettings">
+    <option name="moduleMapping">
+      <map>
+        <entry key="Notification" value="Wallet (2)" />
+        <entry key="Transaction" value="Wallet (1)" />
+      </map>
+    </option>
+  </component>
+</project>
