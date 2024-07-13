@@ -1,0 +1,35 @@
+Contains info of my understanding of the project and how things flow:
+
+
+Repository - Used to access Database
+Service -
+    UserService interface - Used to create a boilerplate which can be used for loose coupling
+                            between controller and service layer.
+    Resource - Used to create classes for userRequests -> constraints on what the user can input
+               and UserResponses -> how the server responds.
+    Impl - Used to implement the functions mentioned in the interface and give them proper
+           functionality.
+Domain - defines what the database stores and creates it.
+
+
+
+
+
+
+
+
+
+
+
+How to run Kafka :
+1. Open cmd
+2. navigate to \bin\windows in kafka drive C
+3. Start zookeeper server using :
+        .\zookeeper-server-start.bat C:\Kafka\kafka_2.12-3.7.1\config\zookeeper.properties
+4. In a different cmd window start the kafka server: navigate to \bin\windows and run:
+        .\kafka-server-start.bat C:\Kafka\kafka_2.12-3.7.1\config\server.properties
+        (it gives location of where to use configuration files from)
+5. To check the list of topics (first navigate to the \bin\windows dirctory):
+        .\kafka-topics.bat --bootstrap-server=localhost:9092 --list
+6. To create a topic :
+        .\kafka-topics.bat --bootstrap-server=localhost:9092 --topic TOPIC_NAME --create
